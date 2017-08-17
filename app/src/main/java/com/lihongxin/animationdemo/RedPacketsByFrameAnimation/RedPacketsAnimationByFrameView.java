@@ -7,7 +7,6 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.lihongxin.animationdemo.R;
 
 
@@ -35,24 +34,18 @@ public class RedPacketsAnimationByFrameView extends LinearLayout {
 
 
     public void play_animation(){
-        for (int i=0;i<=10;i++){
+        for (int i=10;i<=15;i++){
             int id=getResources().getIdentifier("a"+i,"drawable",getContext().getPackageName());
             Drawable drawable=getResources().getDrawable(id);
-            anim.addFrame(drawable,100);
-            anim.setOneShot(true);
+            anim.addFrame(drawable,100);//100ms
+            anim.setOneShot(true);//true 不循环播放
         }
         imageView.setImageDrawable(anim);
-        //imageView.getBackground().setAlpha(0);
         anim.stop();
         anim.start();
 
     }
 
-
-    public boolean flag(){
-        return  flag;
-
-    }
     public RedPacketsAnimationByFrameView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();

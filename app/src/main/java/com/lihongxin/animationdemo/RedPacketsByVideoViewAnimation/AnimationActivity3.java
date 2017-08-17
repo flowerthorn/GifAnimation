@@ -1,7 +1,6 @@
 package com.lihongxin.animationdemo.RedPacketsByVideoViewAnimation;
 
 import android.app.Activity;
-
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.MediaController;
 import com.lihongxin.animationdemo.R;
-
 
 /**
  * Created by lihongxin on 2017/8/15.

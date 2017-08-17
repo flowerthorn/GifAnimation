@@ -18,6 +18,7 @@ public class AnimationActivity extends Activity {
         view = findViewById(R.id.animationView);
         view.play_animation();
 
+
     }
 
     @Override

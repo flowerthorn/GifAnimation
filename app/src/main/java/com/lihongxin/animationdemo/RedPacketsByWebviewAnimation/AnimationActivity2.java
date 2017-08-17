@@ -21,7 +21,6 @@ import com.lihongxin.animationdemo.R;
  */
 
 public class AnimationActivity2 extends Activity  {
-    //private AnimateOfRedPacketsByWebviewView view;
     private WebView webView;
     private Handler handler;
 
